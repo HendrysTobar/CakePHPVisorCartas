@@ -13,6 +13,13 @@ class CartaEntity extends Entity
         'id' => false,
         'nombre_corto'=> false
     ];
+
+    public function escribir()
+    {
+        echo "soy una carta";
+    }
+
+  
 }
 
 ?>

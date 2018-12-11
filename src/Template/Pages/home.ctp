@@ -35,7 +35,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?= $cakeDescription ?>
+        Visor de Cartas hecho en CakePHP
     </title>
 
     <?= $this->Html->meta('icon') ?>
