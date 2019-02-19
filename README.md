@@ -20,24 +20,31 @@ Para instalar:
 
 Esto creará una estructura de directorios para crear la aplicación web.
 
+## Base de Datos 
+El directorio `bd`contiene un archivo sql con instrucciones en sql para crear la Base de Datos.
+Además se debe realizar la siguiente configuración. El presente repositorio no realiza la configuración automaticamente ya que cada uno de ustedes tendrá su respectivo SGBD. usuario y contraseña.
 
+## Configuración
 
-```bash
-bin/cake server -p 8765
+Se debe editar el archivo `config/app.php` y configurar el eleento `DataSources`para que la aplicación tenga accesoa la Base de Datos.
+
 ```
-
-Then visit `http://localhost:8765` to see the welcome page.
-
-## Update
-
-Since this skeleton is a starting point for your application and various files
-would have been modified as per your needs, there isn't a way to provide
-automated upgrades, so you have to do any updates manually.
-
-## Configuration
-
-Read and edit `config/app.php` and setup the `'Datasources'` and any other
-configuration relevant for your application.
+'Datasources' => [
+        'default' => [
+            'className' => 'Cake\Database\Connection',
+            'driver' => 'Cake\Database\Driver\Mysql',/*Esta línea funciona si el servidor es MySql, sino hay que colocar el driver adecuado al SGBD*/
+            'persistent' => false,
+            'host' => 'localhost', /*El servidor es local*/
+            /*
+             * CakePHP will use the default DB port based on the driver selected
+             * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
+             * the following line and set the port accordingly
+             */
+            //'port' => 'non_standard_port_number',
+            'username' => 'my_app', /*Especificar su respectivo usuario*/
+            'password' => 'secret',/*Especificar aquí su contraseña*/
+            'database' => 'my_app',/*La base de datos se debe llamar 'bdcartas'*/
+```
 
 ## Layout
 
