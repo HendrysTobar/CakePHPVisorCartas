@@ -45,9 +45,3 @@ Se debe editar el archivo `config/app.php` y configurar el eleento `DataSources`
             'password' => 'secret',/*Especificar aquí su contraseña*/
             'database' => 'my_app',/*La base de datos se debe llamar 'bdcartas'*/
 ```
-
-## Layout
-
-The app skeleton uses a subset of [Foundation](http://foundation.zurb.com/) (v5) CSS
-framework by default. You can, however, replace it with any other library or
-custom styles.
