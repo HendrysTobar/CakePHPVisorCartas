@@ -1,31 +1,26 @@
-# CakePHP Application Skeleton
 
-[![Build Status](https://img.shields.io/travis/cakephp/app/master.svg?style=flat-square)](https://travis-ci.org/cakephp/app)
-[![Total Downloads](https://img.shields.io/packagist/dt/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
+# Aplicación de Visor de Cartas usando CakePHP con MVC
+Este ejemplo de visor de cartas se usará para orientar en:
 
-A skeleton for creating applications with [CakePHP](https://cakephp.org) 3.x.
+* Uso del Fraemwork PHP
+* Identificación de las diferencias entre el código Spaguetti y el código que usa el patrón MVC
 
-The framework source code can be found here: [cakephp/cakephp](https://github.com/cakephp/cakephp).
+## Para utilizar el repositorio de Ejemplo
+1. Clonar el repositorio
+2. Copiar los archivos en su directorio del Servidor HTTP elegido (htdocs en Apache XAMPP)
+3. Para editar el código se puede usar [Visual Studio  Code](https://code.visualstudio.com/)
 
-## Installation
+## Método de instalación de CakePHP
+CakePHP es un framework de desarrollo de aplicaciones web que usa el patrón MVC con FrontController
+Para instalar:
+1. Descargar [Composer](https://getcomposer.org/doc/00-intro.md) o actualizar usando `composer self-update`.
+2. Ejecutar en consola `php composer.phar create-project --prefer-dist cakephp/app [app_name]`. 
+3. Copiar los archivos en su directorio del Servidor HTTP elegido (htdocs en Apache XAMPP)
+4. Acceder a `localhost/[nombre de la app]` y revisar el resultado.
 
-1. Download [Composer](https://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
-2. Run `php composer.phar create-project --prefer-dist cakephp/app [app_name]`.
+Esto creará una estructura de directorios para crear la aplicación web.
 
-If Composer is installed globally, run
 
-```bash
-composer create-project --prefer-dist cakephp/app
-```
-
-In case you want to use a custom app dir name (e.g. `/myapp/`):
-
-```bash
-composer create-project --prefer-dist cakephp/app myapp
-```
-
-You can now either use your machine's webserver to view the default home page, or start
-up the built-in webserver with:
 
 ```bash
 bin/cake server -p 8765
