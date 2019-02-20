@@ -10,7 +10,7 @@ Este ejemplo de visor de cartas se usará para orientar en:
 2. Copiar los archivos en su directorio del Servidor HTTP elegido (htdocs en Apache XAMPP)
 3. Para editar el código se puede usar [Visual Studio  Code](https://code.visualstudio.com/)
 
-## Método de instalación de CakePHP
+## Para crear un nuevo proyecto de CakePHP (Si clona este repositorio no hace falta crear uno nuevo)
 CakePHP es un framework de desarrollo de aplicaciones web que usa el patrón MVC con FrontController
 Para instalar:
 1. Descargar [Composer](https://getcomposer.org/doc/00-intro.md) o actualizar usando `composer self-update`.
