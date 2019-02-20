@@ -46,3 +46,10 @@ Se debe editar el archivo `config/app.php` y configurar el eleento `DataSources`
             'password' => 'secret',/*Especificar aquí su contraseña*/
             'database' => 'my_app',/*La base de datos se debe llamar 'bdcartas'*/
 ```
+### Finalmente
+Una vez configurada la BD y el archivo de configuración ya podrán acceder a la aplicación web.
+Si acceden a http://localhost/CakePHPVisorCartas/ verán la página de inicio de CakePHP. Esta página se elimina en producción, pero en desarrollo es útil para verificar el estado de la conexión a la BD, entre otras cosas.
+
+Para acceder a la aplicación web del visor de cartas deben invocar el *controlador* de Cartas a través de http://localhost/CakePHPVisorCartas/Cartas
+Este *controlador* consultará al *modelo* el cual consultará a la BD creada y luego mostrará la vista en una página HTML así:
+![](preview.png)
