@@ -6,9 +6,10 @@ Este ejemplo de visor de cartas se usará para orientar en:
 * Identificación de las diferencias entre el código Spaguetti y el código que usa el patrón MVC
 
 ## Para utilizar el repositorio de Ejemplo
-1. Clonar el repositorio
-2. Copiar los archivos en su directorio del Servidor HTTP elegido (htdocs en Apache XAMPP)
-3. Para editar el código se puede usar [Visual Studio  Code](https://code.visualstudio.com/)
+1. Descargar e Instalar [Composer](https://getcomposer.org/doc/00-intro.md) o actualizar usando `composer self-update`. 
+2. Clonar el repositorio y Copiar los archivos en su directorio del Servidor HTTP elegido (htdocs en Apache XAMPP)
+3. Ejecutar `composer update`en el directorio del repositorio clonado. Esto instalará las dependencias del proyecto.
+4. Para editar el código se puede usar [Visual Studio  Code](https://code.visualstudio.com/)
 
 ## Para crear un nuevo proyecto de CakePHP (Si clona este repositorio no hace falta crear uno nuevo)
 CakePHP es un framework de desarrollo de aplicaciones web que usa el patrón MVC con FrontController
