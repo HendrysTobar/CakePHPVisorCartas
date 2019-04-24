@@ -6,10 +6,14 @@ use Cake\Core\Configure;
 
 class CartasController extends AppController
 {
+    
+
+        
     public function index()
     {
         $this->loadComponent('Paginator');
-        $cartas = $this->Paginator->paginate($this->Cartas->find());
+        
+        $cartas = $this->Paginator->paginate($this->Cartas->find(), array('limit'=>2));
         $this->set(compact('cartas'));
     }
 

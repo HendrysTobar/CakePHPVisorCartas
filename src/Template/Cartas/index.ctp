@@ -13,6 +13,7 @@
             
         </div>           
     <?php endforeach; ?>
+    <?php echo $this->Paginator->numbers()?>
     <p class="centrado"> 
         <?= $this->Html->link("Agregar nueva carta", ["action"=>"add"], array("class"=>"centrado"))?>
     </p>    
